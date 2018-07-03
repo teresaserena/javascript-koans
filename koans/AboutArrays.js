@@ -1,9 +1,8 @@
-describe("About Arrays", function() {
+describe("1. About Arrays", function() {
 
   //We shall contemplate truth by testing reality, via spec expectations.
   it("should create arrays", function() {
     var emptyArray = [];
-    expect(typeof(emptyArray)).toBe(FILL_ME_IN); //A mistake? - http://javascript.crockford.com/remedial.html
     expect(emptyArray.length).toBe(FILL_ME_IN);
 
     var multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
@@ -93,5 +92,34 @@ describe("About Arrays", function() {
     var shiftedValue = array.shift();
     expect(shiftedValue).toEqual(FILL_ME_IN);
     expect(array).toEqual(FILL_ME_IN);
+  });
+
+  it("should write a function that returns an array of the first two elements of that array", function () {
+    var firstTwoElements = function(array) {
+      return FILL_ME_IN;
+    };
+
+    expect(firstTwoElements([1,2,3])).toEqual([1,2]);
+    expect(firstTwoElements([7,6,5])).toEqual([7,6]);
+  });
+
+
+  it("should write a function that returns the 3rd element in an array (or null)", function () {
+    var thirdElement = function(array) {
+      return FILL_ME_IN;
+    };
+
+    expect(thirdElement([1,2,3])).toEqual(3);
+    expect(thirdElement([7,6])).toEqual(null);
+  });
+
+  it("should write a function that creates a new array of a certain length", function () {
+    //makeArray should return an array; The length of that array is determined by the second parameter; the elements of that array should be the first parameter 
+    var makeArray = function(element, length) {
+      return FILL_ME_IN;
+    };
+
+    expect(makeArray("hello", 4)).toEqual(["hello", "hello", "hello", "hello"]);
+    expect(makeArray(3,3)).toEqual([3,3,3]);
   });
 });

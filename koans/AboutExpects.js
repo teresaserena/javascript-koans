@@ -1,4 +1,4 @@
-describe('About Expects', function() {
+describe('0. About Expects', function() {
 
   // We shall contemplate truth by testing reality, via spec expectations.
   it('should expect true', function() {
@@ -20,7 +20,7 @@ describe('About Expects', function() {
     var expectedValue = FILL_ME_IN;
     var actualValue = 1 + 1;
 
-  // toEqual() compares using common sense equality.
+    // toEqual() compares using common sense equality.
     expect(actualValue).toEqual(expectedValue);
   });
 
@@ -29,12 +29,28 @@ describe('About Expects', function() {
     var expectedValue = FILL_ME_IN;
     var actualValue = (1 + 1).toString();
 
-  // toBe() will always use === to compare.
+    // toBe() will always use === to compare.
     expect(actualValue).toBe(expectedValue);
   });
 
-  // Sometimes we will ask you to fill in the values.
-  it('should have filled in values', function() {
-    expect(1 + 1).toEqual(FILL_ME_IN);
+  it("should fill in a basic expectation", function() {
+    var myExpectation = 4 > 7;
+    expect(myExpectation).toBe(FILL_ME_IN);
   });
+
+  it("should fill in an expectation 2", function() {
+    var myExpectation = 8 === (2*4);
+    expect(myExpectation).toBe(FILL_ME_IN);
+  });
+
+  it("should make up with any truthy statement", function() {
+    var myExpectation = FILL_ME_IN;
+    expect(myExpectation).toBeTruthy();
+  });
+
+  it("should make up with any falsey statement", function() {
+    var myExpectation = FILL_ME_IN;
+    expect(myExpectation).toBeFalsey();
+  });
+
 });

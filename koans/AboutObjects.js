@@ -1,4 +1,4 @@
-describe("About Objects", function () {
+describe("3. About Objects", function () {
 
   describe("Properties", function () {
     var megalomaniac;
@@ -48,41 +48,16 @@ describe("About Objects", function () {
     expect(megalomaniac.calculateAge()).toBe(FILL_ME_IN);
   });
 
-  describe("'in' keyword", function () {
-    var megalomaniac;
-    beforeEach(function () {
-      megalomaniac = {
-        mastermind: "The Monarch",
-        henchwoman: "Dr Girlfriend",
-        theBomb: true
-      };
-    });
-
-    it("should have the bomb", function () {
-
-      var hasBomb = "theBomb" in megalomaniac;
-
-      expect(hasBomb).toBe(FILL_ME_IN);
-    });
-
-    it("should not have the detonator however", function () {
-
-      var hasDetonator = "theDetonator" in megalomaniac;
-
-      expect(hasDetonator).toBe(FILL_ME_IN);
-    });
-  });
-
   it("should know that properties can be added and deleted", function () {
     var megalomaniac = { mastermind : "Agent Smith", henchman: "Agent Smith" };
 
-    expect("secretary" in megalomaniac).toBe(FILL_ME_IN);
+    expect(megalomaniac["secretary"]).toBe(FILL_ME_IN);
 
     megalomaniac.secretary = "Agent Smith";
-    expect("secretary" in megalomaniac).toBe(FILL_ME_IN);
+    expect(megalomaniac["secretary"]).toBe(FILL_ME_IN);
 
     delete megalomaniac.henchman;
-    expect("henchman" in megalomaniac).toBe(FILL_ME_IN);
+    expect(megalomaniac["henchman"]).toBe(FILL_ME_IN);
   });
 
 
@@ -105,5 +80,23 @@ describe("About Objects", function () {
 
       expect(simpleCircle.describe()).toBe(FILL_ME_IN);
       expect(colouredCircle.describe()).toBe(FILL_ME_IN);
+  });
+
+  it("should create your own simple object", function() {
+    var myNewObject = FILL_ME_IN;
+
+    expect(myNewObject.prop1).toEqual("a property!");
+    expect(myNewObject.prop2).toEqual([4,3,2]);
+    expect(myNewObject.prop3()).toEqual("a property that is a method!");
+  });
+
+  it("should create your own prototype", function() {
+    function MyPrototype(argument) {
+      return FILL_ME_IN;
+    }
+    var myNewObject = new MyPrototype("initial value");
+
+    expect(myNewObject.prop1).toEqual({simple: "object"});
+    expect(myNewObject.prop2).toEqual("initial value");
   });
 });
