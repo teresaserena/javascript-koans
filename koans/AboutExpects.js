@@ -43,14 +43,28 @@ describe('0. About Expects', function() {
     expect(myExpectation).toBe(FILL_ME_IN);
   });
 
-  it("should make up with any truthy statement", function() {
+  it("should make up any true statement", function() {
     var myExpectation = FILL_ME_IN;
+    expect(myExpectation).toBe(true);
+  });
+
+  it("should make up any truthy statement", function() {
+    var myExpectation = FILL_ME_IN;
+    expect(myExpectation).not.toBe("Fill this value in");
+    expect(myExpectation).not.toBe(true);
     expect(myExpectation).toBeTruthy();
   });
 
-  it("should make up with any falsey statement", function() {
+  it("should make up any false statement", function() {
     var myExpectation = FILL_ME_IN;
-    expect(myExpectation).toBeFalsey();
+    expect(myExpectation).toBe(false);
+  });
+
+  it("should make up any falsey statement", function() {
+    var myExpectation = FILL_ME_IN;
+    expect(myExpectation).not.toBe("Fill this value in");
+    expect(myExpectation).not.toBe(false);
+    expect(myExpectation).toBeFalsy();
   });
 
 });
