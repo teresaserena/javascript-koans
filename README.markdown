@@ -1,5 +1,5 @@
 # javascript-koans
-Based on Edgecase's fantastic 
+Based on Edgecase's fantastic
 [Ruby koans](http://github.com/edgecase/ruby_koans), the goal of the
 Javascript koans is to teach you Javascript programming through
 testing.
@@ -16,7 +16,7 @@ you to solve more complicated problems and use more advanced techniques.
 
 ## Running the Koans
 Simply navigate to the Javascript Koans folder using a file browser, and
-double click on KoansRunnner.html. 
+double click on KoansRunnner.html.
 
 Any browser will do, but for the best results Firefox or Chrome is
 recommended. More stack trace information shows up for javascript on these
@@ -26,6 +26,10 @@ The first error will be in koans/AboutExpects.js. Fix the first test and
 refresh the browser. Rinse and repeat until all tests turn green.
 
 The test runner used is [Jasmine](http://jasmine.github.io/) with a customized report viewer.
+
+## Editing the Code
+
+Open the javascript-koans/koans folder (or one of the javascript files it contains) in Atom or another IDE of your choice. In Atom, edit the file, save your changes before refreshing your browser.
 
 ### Changelog
 *  v3 - Nov 2010  - Moved out of branch of functional-koans project, into own top level project
