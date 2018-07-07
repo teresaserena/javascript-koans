@@ -1,4 +1,4 @@
-describe("About Functions", function() {
+describe("2. About Functions", function() {
 
   it("should declare functions", function() {
 
@@ -97,4 +97,31 @@ describe("About Functions", function() {
     expect(praiseSinger.givePraise("Mary")).toBe(FILL_ME_IN);
 
   });
+
+  it("can use a functions that return a functions", function(){
+    var myFunc = function (){
+      var count = 0;
+      return function () {
+        return count + 1;
+      };
+    };
+
+    expect(typeof(myFunc())).toEqual(FILL_ME_IN);
+    expect(myFunc()()).toEqual(FILL_ME_IN);
+  });
+
+  it("can use a functions and closures", function(){
+    var myFunc = function (){
+      var count = 0;
+      return function () {
+        count = count + 1;
+        return count;
+      };
+    };
+
+    var closure = myFunc();
+    expect(closure()).toEqual(FILL_ME_IN);
+    expect(closure()).toEqual(FILL_ME_IN);
+  });
+
 });

@@ -1,6 +1,4 @@
-var _; //globals
-
-describe("About Applying What We Have Learnt", function() {
+describe("7. About Applying What We Have Learnt", function() {
 
   var products;
 
