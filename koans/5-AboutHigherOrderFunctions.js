@@ -36,8 +36,8 @@ describe("5. About Higher Order Functions", function () {
 
     var isEven = function(x) { return x % 2 === 0 };
 
-    expect(onlyEven.all(isEven)).toBe(FILL_ME_IN);
-    expect(mixedBag.all(isEven)).toBe(FILL_ME_IN);
+    expect(onlyEven.every(isEven)).toBe(FILL_ME_IN);
+    expect(mixedBag.every(isEven)).toBe(FILL_ME_IN);
   });
 
   it("should use 'any' to test if any items passes condition" , function () {
@@ -46,8 +46,8 @@ describe("5. About Higher Order Functions", function () {
 
     var isEven = function(x) { return x % 2 === 0 };
 
-    expect(onlyEven.any(isEven)).toBe(FILL_ME_IN);
-    expect(mixedBag.any(isEven)).toBe(FILL_ME_IN);
+    expect(onlyEven.some(isEven)).toBe(FILL_ME_IN);
+    expect(mixedBag.some(isEven)).toBe(FILL_ME_IN);
   });
 
   it("should write a function to filter out objects that match a criteria", function () {
