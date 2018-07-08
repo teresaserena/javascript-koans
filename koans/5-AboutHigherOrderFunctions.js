@@ -77,7 +77,7 @@ describe("5. About Higher Order Functions", function () {
     // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
     var arrayDiff = function(array1, array2) {
-      array1.filter(function(){
+      return array1.filter(function(){
         return FILL_ME_IN;
       });
     };
