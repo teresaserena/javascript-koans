@@ -1,7 +1,7 @@
 describe("1. About Arrays", function() {
 
   //We shall contemplate truth by testing reality, via spec expectations.
-  it("should create arrays", function() {
+  it("You should create a few arrays", function() {
     var emptyArray = [];
     expect(emptyArray.length).toBe(FILL_ME_IN);
 
@@ -14,7 +14,7 @@ describe("1. About Arrays", function() {
     expect(multiTypeArray[5][0]).toBe(FILL_ME_IN);
   });
 
-  it("should understand array literals", function () {
+  it("You should understand array literals", function () {
     var array = [];
     expect(array).toEqual([]);
 
@@ -28,7 +28,7 @@ describe("1. About Arrays", function() {
     expect(array).toEqual(FILL_ME_IN);
   });
 
-  it("should understand array length", function () {
+  it("You should understand array length", function () {
     var fourNumberArray = [1, 2, 3, 4];
 
     expect(fourNumberArray.length).toBe(FILL_ME_IN);
@@ -42,7 +42,7 @@ describe("1. About Arrays", function() {
     expect(tenEmptyElementArray.length).toBe(FILL_ME_IN);
   });
 
-  it("should slice arrays", function () {
+  it("You should slice these arrays", function () {
     var array = ["peanut", "butter", "and", "jelly"];
 
     expect(array.slice(0, 1)).toEqual(FILL_ME_IN);
@@ -54,7 +54,7 @@ describe("1. About Arrays", function() {
     expect(array.slice(5, 1)).toEqual(FILL_ME_IN);
   });
 
-  it("should know array references", function () {
+  it("You should know array references", function () {
     var array = [ "zero", "one", "two", "three", "four", "five" ];
 
     function passedByReference(refArray) {
@@ -72,7 +72,7 @@ describe("1. About Arrays", function() {
     expect(array[3]).toBe(FILL_ME_IN);
   });
 
-  it("should push and pop", function () {
+  it("You should know how to push and pop", function () {
     var array = [1, 2];
     array.push(3);
 
@@ -83,7 +83,7 @@ describe("1. About Arrays", function() {
     expect(array).toEqual(FILL_ME_IN);
   });
 
-  it("should know about shifting arrays", function () {
+  it("You should know about shifting arrays", function () {
     var array = [1, 2];
 
     array.unshift(3);
@@ -94,7 +94,7 @@ describe("1. About Arrays", function() {
     expect(array).toEqual(FILL_ME_IN);
   });
 
-  it("should write a function that returns an array of the first two elements of that array", function () {
+  it("You should write a function that returns an array of the first two elements of that array", function () {
     var firstTwoElements = function(array) {
       return FILL_ME_IN;
     };
@@ -104,7 +104,7 @@ describe("1. About Arrays", function() {
   });
 
 
-  it("should write a function that returns the 3rd element in an array (or null)", function () {
+  it("You should write a function that returns the 3rd element in an array (or null)", function () {
     var thirdElement = function(array) {
       return FILL_ME_IN;
     };
@@ -113,10 +113,10 @@ describe("1. About Arrays", function() {
     expect(thirdElement([7,6])).toEqual(null);
   });
 
-  it("should write a function that creates a new array of a certain length", function () {
+  it("You should write a function that creates a new array of a certain length", function () {
     //makeArray should return an array; The length of that array is determined by the second parameter; the elements of that array should be the first parameter 
     var makeArray = function(element, length) {
-      return FILL_ME_IN;
+
     };
 
     expect(makeArray("hello", 4)).toEqual(["hello", "hello", "hello", "hello"]);

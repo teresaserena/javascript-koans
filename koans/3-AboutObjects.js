@@ -7,18 +7,18 @@ describe("3. About Objects", function () {
        megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
     });
 
-    it("should confirm objects are collections of properties", function () {
+    it("You should know and confirm objects are collections of properties", function () {
       expect(megalomaniac.mastermind).toBe(FILL_ME_IN);
     });
 
-    it("should confirm that properties are case sensitive", function () {
+    it("You should know and confirm that properties are case sensitive", function () {
       expect(megalomaniac.henchwoman).toBe(FILL_ME_IN);
       expect(megalomaniac.henchWoman).toBe(FILL_ME_IN);
     });
   });
 
 
-  it("should know properties that are functions act like methods", function () {
+  it("You should know properties that are functions act like methods", function () {
     var megalomaniac = {
       mastermind : "Brain",
       henchman: "Pinky",
@@ -32,7 +32,7 @@ describe("3. About Objects", function () {
     expect(FILL_ME_IN).toMatch(battleCry);
   });
 
-  it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
+  it("You should confirm that when a function is attached to an object, 'this' refers to the object", function () {
     var currentDate = new Date();
     var currentYear = (currentDate.getFullYear());
     var megalomaniac = {
@@ -48,7 +48,7 @@ describe("3. About Objects", function () {
     expect(megalomaniac.calculateAge()).toBe(FILL_ME_IN);
   });
 
-  it("should know that properties can be added and deleted", function () {
+  it("You should know that properties can be added and deleted", function () {
     var megalomaniac = { mastermind : "Agent Smith", henchman: "Agent Smith" };
 
     expect(megalomaniac["secretary"]).toBe(FILL_ME_IN);
@@ -61,7 +61,7 @@ describe("3. About Objects", function () {
   });
 
 
-  it("should use prototype to add to all objects", function () {
+  it("You should use prototype to add to all objects", function () {
       function Circle(radius)
       {
         this.radius = radius;
@@ -82,7 +82,7 @@ describe("3. About Objects", function () {
       expect(colouredCircle.describe()).toBe(FILL_ME_IN);
   });
 
-  it("should create your own simple object", function() {
+  it("You should create your own simple object", function() {
     var myNewObject = FILL_ME_IN;
 
     expect(myNewObject.prop1).toEqual("a property!");
@@ -90,7 +90,7 @@ describe("3. About Objects", function () {
     expect(myNewObject.prop3()).toEqual("a property that is a method!");
   });
 
-  it("should create your own prototype", function() {
+  it("You should create your own prototype", function() {
     function MyPrototype(argument) {
       return FILL_ME_IN;
     }

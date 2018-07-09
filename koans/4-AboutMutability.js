@@ -1,13 +1,13 @@
 describe("4. About Mutability", function() {
 
-  it("should expect object properties to be public and mutable", function () {
+  it("You should expect object properties to be public and mutable", function () {
     var aPerson = {firstname: "John", lastname: "Smith" };
     aPerson.firstname = "Alan";
 
     expect(aPerson.firstname).toBe(FILL_ME_IN);
   });
 
-  it("should understand that constructed properties are public and mutable", function () {
+  it("You should understand that constructed properties are public and mutable", function () {
     function Person(firstname, lastname)
     {
       this.firstname = firstname;
@@ -19,7 +19,7 @@ describe("4. About Mutability", function() {
     expect(aPerson.firstname).toBe(FILL_ME_IN);
   });
 
-  it("should expect prototype properties to be public and mutable", function () {
+  it("You should expect prototype properties to be public and mutable", function () {
     function Person(firstname, lastname)
     {
       this.firstname = firstname;
@@ -39,7 +39,7 @@ describe("4. About Mutability", function() {
     expect(aPerson.getFullName()).toBe(FILL_ME_IN);
   });
 
-  it("should know that variables inside a constructor and constructor args are private", function () {
+  it("You should know that variables inside a constructor and constructor args are private", function () {
     function Person(firstname, lastname)
     {
       var fullName = firstname + " " + lastname;

@@ -1,6 +1,6 @@
 describe("2. About Functions", function() {
 
-  it("should declare functions", function() {
+  it("You should declare a function", function() {
 
     function add(a, b) {
       return a + b;
@@ -9,7 +9,7 @@ describe("2. About Functions", function() {
     expect(add(1, 2)).toBe(FILL_ME_IN);
   });
 
-  it("should know internal variables override outer variables", function () {
+  it("You should know internal variables will override outer variables", function () {
     var message = "Outer";
 
     function getMessage() {
@@ -26,7 +26,7 @@ describe("2. About Functions", function() {
     expect(message).toBe(FILL_ME_IN);
   });
 
-  it("should have lexical scoping", function () {
+  it("You should have lexical scoping", function () {
     var variable = "top-level";
     function parentfunction() {
       var variable = "local";
@@ -38,7 +38,7 @@ describe("2. About Functions", function() {
     expect(parentfunction()).toBe(FILL_ME_IN);
   });
 
-  it("should use lexical scoping to synthesise functions", function () {
+  it("You should use lexical scoping to synthesize new functions", function () {
 
     function makeMysteryFunction(makerValue)
     {
@@ -55,7 +55,7 @@ describe("2. About Functions", function() {
     expect(mysteryFunction3(10) + mysteryFunction5(5)).toBe(FILL_ME_IN);
   });
 
-  it("should allow extra function arguments", function () {
+  it("You should allow extra function arguments", function () {
 
     function returnFirstArg(firstArg) {
       return firstArg;
@@ -80,7 +80,7 @@ describe("2. About Functions", function() {
     expect(returnAllArgs("first", "second", "third")).toBe(FILL_ME_IN);
   });
 
-  it("should pass functions as values", function () {
+  it("You should be able to pass functions as values", function () {
 
     var appendRules = function (name) {
       return name + " rules!";
@@ -98,7 +98,7 @@ describe("2. About Functions", function() {
 
   });
 
-  it("can use a functions that return a functions", function(){
+  it("You can use a function that returns a function", function(){
     var myFunc = function (){
       var count = 0;
       return function () {
@@ -109,8 +109,8 @@ describe("2. About Functions", function() {
     expect(typeof(myFunc())).toEqual(FILL_ME_IN);
     expect(myFunc()()).toEqual(FILL_ME_IN);
   });
-
-  it("can use a functions and closures", function(){
+  
+  it("You should know how to use functions and closures", function(){
     var myFunc = function (){
       var count = 0;
       return function () {
